@@ -1,0 +1,122 @@
+.spacex-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 80px 100px 80px;
+  box-sizing: border-box;
+}
+
+.media-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.media-background video,
+.media-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spacex-section.align-left {
+  justify-content: flex-start;
+}
+.spacex-section.align-left .section-content {
+  text-align: left;
+}
+
+.spacex-section.align-right {
+  justify-content: flex-end;
+}
+.spacex-section.align-right .section-content {
+  text-align: right;
+}
+
+.section-content {
+  position: relative;
+  top:-30%;
+  z-index: 2;
+  color: #ffffff;
+  max-width: 930px;
+  text-transform: uppercase;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.section-label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.section-heading {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.section-description {
+  font-size: 15px;
+  line-height: 1.6;
+  text-transform: none;
+  margin-bottom: 35px;
+  color: #e0e0e0;
+}
+.spacex-btn {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 16px 50px;
+  border: 2px solid #ffffff;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spacex-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spacex-btn:hover {
+  color: #000000;
+}
+
+.spacex-btn:hover::before {
+  transform: scaleY(1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
