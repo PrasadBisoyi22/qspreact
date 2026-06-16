@@ -19,3 +19,12 @@ There are 2 types of hooks in react js
 
     const [initial values, update function] = useState(initial value )
 2. 
+
+once updated it will rerender the component 
+if directly call the use state function then it will stuck in a infinite loop and react will terminate the program
+if parent is rerender child will rerender
+if child is render then parent won't effect
+
+# use state task
+
+data = await fetch(api.github.com/users)

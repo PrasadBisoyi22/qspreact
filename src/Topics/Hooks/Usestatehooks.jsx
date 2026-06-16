@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Child from "./Child";
 
 const Usestatehooks = () =>{
     //top 
@@ -8,16 +9,22 @@ const Usestatehooks = () =>{
     const updateCount=()=>{
         setCount(count + 1);
     }
-    console.log(data)
+    const fetchdata  = async() => {
+        const data = await fetch("https://api.github.com/users");
+        const json = await data.json();
+        console.log(json);
+    }
 
     const nestedFun = ()=>{
-        //nested function
+        //nested function+
     }
+    console.log("Parent")
 
      return(
         <div>
             <h1>Usestatehooks</h1>
             <h1>{count}</h1>
+            <Child/>
             <button onClick={updateCount}>Update</button>
         </div>
     )
