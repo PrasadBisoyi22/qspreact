@@ -1,5 +1,6 @@
 import './App.css'
 import Conditional_Rendering from './Topics/conditional_rendering.jsx/Conditional_Rendering';
+import HooksTask from './Topics/Hooks/HooksTask';
 import Usestatehooks from './Topics/Hooks/Usestatehooks';
 import Jsx_Expression from "./Topics/jsx_expression/Jsx_Expression";
 import Jsx_Rules from "./Topics/jsx_expression/Jsx_Rules";
@@ -18,7 +19,8 @@ const App = () => {
       {/* <Conditional_Rendering/> */}
       {/* <Props_Conditional/> */}
       {/* <PropsConditionaltask/> */}
-      <Usestatehooks/>
+      {/* <Usestatehooks/> */}
+      <HooksTask/>
     </div>
   )
 }
