@@ -1,7 +1,6 @@
 import "./Card.css";
 
 const Card = ({ data }) => {
-  console.log(data)
 
   const { login, id, node_id, avatar_url,url, html_url,followers_url,following_url,gists_url,starred_url,subscriptions_url, organizations_url, repos_url,events_url,recevied_events_url, type, user_vie_type,site_admin } = data;
 
@@ -41,7 +40,7 @@ const Card = ({ data }) => {
             </a>
           </div>
         </div>
-        <table className="card-table">
+        {/* <table className="card-table">
           <thead>
         <tr>
           <th>Field</th>
@@ -62,7 +61,7 @@ const Card = ({ data }) => {
           );
         })}
           </tbody>
-        </table>
+        </table> */}
       </div>
   );
 };

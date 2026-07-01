@@ -18,7 +18,7 @@ There are 2 types of hooks in react js
     c. first value is initial value  2nd value is a function to update the initial value
 
     const [initial values, update function] = useState(initial value )
-2. 
+
 
 once updated it will rerender the component 
 if directly call the use state function then it will stuck in a infinite loop and react will terminate the program
@@ -28,3 +28,24 @@ if child is render then parent won't effect
 # use state task
 
 data = await fetch(api.github.com/users)
+
+
+
+2. useRef()
+
+useRef helps us access and manipulate real DOM elements directly without causing the component to re-render.
+
+3. useEffect
+
+it is used to  avoid the side effects of the react js
+
+we can use useEffect hook in 3 ways  
+
+1. useEffect(callback) it will execute the callback function for every re-render
+
+
+2. useEffect(callback,[])
+
+3. useEffect(callback,[dependency])
+
+Note: useEffect hook will not return any data. (void function| void method)

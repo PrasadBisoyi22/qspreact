@@ -1,4 +1,6 @@
 # React Topics
+# SYNTHETIC EVENT used by the react
+
 
 1. JsX_Expression
 jsx helps to wwrite the javascript in html which is used to access the javasript variable in html content
@@ -66,3 +68,10 @@ Oneway data binding
 Declarative due to hooks
 
 
+
+
+# Props Drilling
+
+
+# HOC 
+A Higher-Order Component (HOC) is an advanced pattern in React for reusing component logic. Concretely, an HOC is a pure function that takes a component as an argument and returns a new, enhanced component.
