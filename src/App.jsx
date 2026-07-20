@@ -32,6 +32,15 @@ import RadioAndCheckbox from './Topics/controlledForm/RadioAndCheckbox';
 import CheckBox from './Topics/controlledForm/CheckBox';
 import MultipleCheckbox from './Topics/controlledForm/MultipleCheckbox';
 import AllInputFields from './Topics/controlledForm/AllInputFields';
+import ApplicationForm from './Task/ControlledForm/ApplicationForm';
+import Signup from './Practice/Signup';
+import RoutingConcept from './Topics/routingConcept/RoutingConcept';
+import ReactMemo from './Topics/optimization/ReactMemo';
+import UseMemoHooks from './Topics/usememohooks/UseMemoHooks';
+import UseCallBackHook from './Topics/usecallbackhook/UseCallBackHook';
+import CustomHook from './Topics/customHooks/CustomHook';
+import UseReducerHook from './Topics/usereduserhook/UseReducerHook';
+import ReduxToolKitConcept from './Topics/reduxtoolkitconcept/ReduxToolKitConcept';
 
 
 const App = () => {
@@ -69,7 +78,18 @@ const App = () => {
       {/* <RadioAndCheckbox/> */}
       {/* <CheckBox/> */}
       {/* <MultipleCheckbox/> */}
-      <AllInputFields/>
+      {/* <AllInputFields/> */}
+      {/* <ApplicationForm/> */}
+      {/* <Signup/> */}
+      {/* <RoutingConcept/> */}
+      {/* <ReactMemo/> */}
+      {/* <UseMemoHooks/> */}
+      {/* <UseCallBackHook/> */}
+      {/* <CustomHook/> */}
+      {/* <UseReducerHook/> */}
+      <ReduxToolKitConcept/>
+
+      <ToastContainer/>
     </div>
   )
 }

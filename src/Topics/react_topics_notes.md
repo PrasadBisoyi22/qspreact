@@ -75,3 +75,8 @@ Declarative due to hooks
 
 # HOC 
 A Higher-Order Component (HOC) is an advanced pattern in React for reusing component logic. Concretely, an HOC is a pure function that takes a component as an argument and returns a new, enhanced component.
+
+
+
+
+# Routing
